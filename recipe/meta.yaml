@@ -1,5 +1,5 @@
 {% set name = "napari-sam4is" %}
-{% set version = "0.0.5" %}
+{% set version = "0.0.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-SAM4IS-{{ version }}.tar.gz
-  sha256: 5a0b97e340acd93c0accb2457c76df2b105907e1984b2085ccecc5b89a5b057a
+  sha256: 553823e132a789c62c5e718f1a75858f4935f4ab03a6ff910315529f5a09c9a1
 
 build:
   noarch: python
@@ -37,12 +37,14 @@ test:
     - pip check
   requires:
     - pip
+    - pyqt
 
 about:
-  home: https://github.com/hiroalchem/napari-SAM4IS
+  home: https://pypi.org/project/napari-SAM4IS
   summary: Create annotations for instance segmentation using Segment Anything models
   license: Apache-2.0
   license_file: LICENSE
+  dev_url: https://github.com/hiroalchem/napari-SAM4IS
 
 extra:
   recipe-maintainers:
