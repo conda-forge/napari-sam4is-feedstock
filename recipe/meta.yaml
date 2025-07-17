@@ -6,23 +6,23 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-SAM4IS-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/napari-SAM4IS-{{ version }}.tar.gz
   sha256: 553823e132a789c62c5e718f1a75858f4935f4ab03a6ff910315529f5a09c9a1
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
   run:
     - magicgui
     - napari
     - numpy
-    - python >=3.8
+    - python >={{ python_min }}
     - pytorch
     - qtpy
     - scikit-image
@@ -38,6 +38,7 @@ test:
   requires:
     - pip
     - pyqt
+    - python {{ python_min }}
 
 about:
   home: https://pypi.org/project/napari-SAM4IS

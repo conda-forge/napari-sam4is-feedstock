@@ -3,11 +3,13 @@ About napari-sam4is-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/napari-sam4is-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/hiroalchem/napari-SAM4IS
+Home: https://pypi.org/project/napari-SAM4IS
 
 Package license: Apache-2.0
 
 Summary: Create annotations for instance segmentation using Segment Anything models
+
+Development: https://github.com/hiroalchem/napari-SAM4IS
 
 Current build status
 ====================
