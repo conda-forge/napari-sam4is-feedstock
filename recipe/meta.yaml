@@ -28,6 +28,9 @@ requirements:
     - scikit-image
     - segment-anything
     - torchvision
+    - requests
+    - urllib3
+    - Pillow
 
 test:
   imports:
