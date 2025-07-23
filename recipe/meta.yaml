@@ -1,5 +1,5 @@
 {% set name = "napari-sam4is" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 2daf9107bb6e991111177132116d097f1663dad0ce26c6b198f95e9b2943fa1c
+  sha256: 6b4271e41858f6cde23828e4aa4e970e99f34473777564ed9d1b0248a35b3bcc
 
 
 build:
