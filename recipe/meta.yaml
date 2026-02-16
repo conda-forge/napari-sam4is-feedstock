@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
@@ -27,6 +27,7 @@ requirements:
     - python >={{ python_min }}
     - pytorch
     - qtpy
+    - pyyaml
     - scikit-image
     - segment-anything
     - torchvision
