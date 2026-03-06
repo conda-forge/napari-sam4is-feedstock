@@ -29,6 +29,7 @@ requirements:
     - qtpy
     - pyyaml
     - scikit-image
+    - sam3
     - segment-anything
     - torchvision
     - requests
