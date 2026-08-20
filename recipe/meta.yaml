@@ -22,7 +22,7 @@ requirements:
     - setuptools
   run:
     - magicgui
-    - napari
+    - napari >=0.6.0
     - numpy
     - python >={{ python_min }}
     - pytorch
